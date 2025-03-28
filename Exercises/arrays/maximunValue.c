@@ -9,7 +9,7 @@ int main(){
     int i = 1;
     int temp = number;
 
-    while(temp > i){ //verify how many digits are in number
+    while(temp > i){ //Count how many digits are in 'number'
         temp /= 10;
         i++;
     }
