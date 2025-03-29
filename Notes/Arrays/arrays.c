@@ -1,6 +1,8 @@
 //declarating an array
 #include <stdio.h>
 
+#define SIZE 8
+
 int main()
 {
  int array [4] = {1,2,3,4};
@@ -15,25 +17,9 @@ int main()
  arr[4] = 3;
 
  //acccess an element <array> [index]
-// printf("%d", array[3]);
- 
-//lowest-grade example
-int grades[10];
-int lowest;
-for(int i = 0; i<10;i++){
-
-    printf("insert the grade number %d\n", i+1);
-    scanf("%d", &grades[i]);
-
+//using the define 
+int arr5[SIZE];
+for(int i = 0; i < SIZE; i++){
+    arr5[i] = i*3;
 }
-lowest = grades[0];
-for (int i = 0; i < 10; i++)
-{
-    if(grades[i] < lowest)
-        lowest = grades[i];
-}
-
-printf("Your lowest grades is: %d", lowest);
-
-return 0;
 }
